@@ -45,7 +45,7 @@ function TodoList({ todos, onSelect, onDelete }) {
         </thead>
         <tbody>
           {todos.map(todo => (
-            <tr key={todo.id} onClick={() => onSelect(todo)}>
+            <tr key={todo._id} onClick={() => onSelect(todo)}>
               <td>{todo.name}</td>
               <td>{todo.description}</td>
               <td>{todo.status}</td>
