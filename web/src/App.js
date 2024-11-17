@@ -58,7 +58,7 @@ function App() {
       let newTodos = todos;
       for (const id of todoIds) {
         await fetch(`http://localhost:3001/todos/${id}`, { method: 'DELETE' });
-        newTodos = newTodos.filter(todo => todo._id != id);
+        newTodos = newTodos.filter(todo => todo._id !== id);
       }
       setTodos(newTodos);
     } catch (error) {

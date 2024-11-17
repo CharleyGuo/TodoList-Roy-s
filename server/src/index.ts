@@ -45,6 +45,7 @@ app.get('/todos', async (req: Request, res: Response) => {
   try {
     const collection = Database.getDb().collection(TODOS_COLLECTION);
     const todos = await collection.find({}).toArray();
+    console.log(`Fetched ${todos.length} todos`);
     res.json(todos);
   } catch (error) {
     console.error('Error fetching todos:', error);
