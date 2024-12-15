@@ -1,0 +1,1 @@
+This is a project to build a TodoList with Node.js, React and MogoDB. The project could be implemented with VSCode with a server and a web. Please follow the instruction below to set up Github and VSCode and the Readme within the /Server and /Web folder to setup the server and seb. 
